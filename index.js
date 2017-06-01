@@ -24,15 +24,22 @@ append(container, new H1({
   textContent: 'tim froehlich'
 }))
 for (const project of projects) {
-  append(container, new A('.project', {
-    target: '_blank',
-    href: project.url
-  }, [
-    Span('.name', {
+  append(container, new Div('.project', [
+    new Span('.name', {
       textContent: project.name
     }),
-    Img({
-      src: project.image || `./img/${project.name.split(' ').join('-')}.png`
-    })
+    new A('.image', {
+      target: '_blank',
+      href: project.url
+    }, [
+      new Img({
+        src: project.image || `./img/${project.name.split(' ').join('-')}.png`
+      })
+    ]),
+    new Span('.tags', 
+      project.tags.map( tag => new Span('.tag', {
+        textContent: tag
+      }))
+    ),
   ]))
 }

@@ -35,7 +35,7 @@ const projects = [
     url: 'http://tjfroll.github.io/svg-performance/',
     tags: [
       'creative coding',
-      'SVG'
+      'svg'
     ]
   },
   {
@@ -45,7 +45,7 @@ const projects = [
     url: 'http://tjfroll.github.io/sketch/threedizzle/',
     tags: [
       'creative coding',
-      'WebGL'
+      'webgl'
     ]
   },
   {

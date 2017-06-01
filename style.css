@@ -8,29 +8,40 @@
 body {
   background-color: #777;
   // padding-top: 5rem;
-  margin: 0 1rem;
+  // margin: 0 1rem;
+  font-family: 'Verdana';
+  min-width: 640px;
+}
+
+.container {
+  overflow-x: hidden;
+  margin-top: -1rem;
 }
 
 h1 {
-  transform: rotate(5deg);
-  font-family: 'Verdana';
+  transform: rotate(3.25deg);
   font-size: 5rem;
   display: flex;
   justify-content: flex-end;
+  margin-right: 1rem;
   color: #ffb647;
 }
 
 .project {
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin-bottom: 1rem;
+  margin-left: -3rem;
+  margin-right: -3rem;
   padding: 0 1rem;
-  border: .1rem solid #333;
+  border-top: .7rem solid #333;
+  border-bottom: .1rem solid #333;
+  // border-top-width: .7rem;
+  // box-shadow: 0 .2rem .2rem -.1rem #FFF;
   background-color: #666;
-  transform: rotate(5deg);
+  transform: rotate(3.25deg);
   height: 7rem;
   transition: .15s background-color, color, border-color;
 }
@@ -40,25 +51,51 @@ h1 {
   border-color: #222;
 }
 
-.project:hover img {
-  opacity: .7;
+.project:hover .image {
+  opacity: .6;
 }
 
-.project img {
+.project .image {
+  overflow: hidden;
   position: absolute;
+  top: 0;
   bottom: 0;
+  right: 0;
   left: 0;
-  opacity: .5;
   z-index: -1;
+  opacity: .4;
   transition: .15s opacity;
 }
 
+.project img {
+}
+
+.project .tags {
+  position: absolute;
+  top: 0;
+  right: 5rem;
+}
+
+.project .tag {
+  background-color: #333;
+  border: 1px solid #222;
+  border-top: none;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  padding: 0 .5rem;
+  padding-bottom: .3rem;
+  margin: 0 .3rem;
+  color: #BBB;
+  font-size: 1rem;
+}
+
 .project .name {
+  margin-left: 3rem;
   margin-bottom: -.3rem;
-  font-family: 'Verdana';
-  font-size: 2rem;
+  font-size: 2.2rem;
   letter-spacing: .1rem;
-  color: #AEAEAE;
-  text-shadow: 0 0 3px #000;
+  font-weight: bold;
+  color: #CCC;
+  text-shadow: 0 0 .2rem #000;
   // transform: rotate(-7deg);
 }
