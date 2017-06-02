@@ -9,9 +9,9 @@ class Project extends Div('.project') {
           textContent: name
         }),
         new Div('.image', [
-          new Img('.static', {
-            src: image || `./img/${name.split(' ').join('-')}.png`
-          }),
+          // new Img('.static', {
+          //   src: image || `./img/${name.split(' ').join('-')}.png`
+          // }),
           new Img('.animated', {
             src: image || `./img/${name.split(' ').join('-')}.png`
           })
@@ -22,9 +22,11 @@ class Project extends Div('.project') {
       ]),
       new Span('.tags', 
         tags.map( tag => new Span('.tag', {
-          textContent: tag
+          textContent: `${tag}${notLast(tags, tag) ? ',' : ''}`
         }))
       ),
     ])
   }
 }
+
+const notLast = (tags, tag) => tags.indexOf(tag) < tags.length - 1

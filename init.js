@@ -1,10 +1,11 @@
 const {
   A,
   P,
+  I,
   Div,
   Span,
   H1,
-  Img
+  Img,
 } = alkali
 
 const append = (target, elems) => {
