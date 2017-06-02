@@ -5,23 +5,26 @@ class Project extends Div('.project') {
         target: '_blank',
         href: url
       }, [
-        new Span('.name', {
+        new Div('.name', {
           textContent: name
         }),
         new Div('.image', [
-          new Img({
+          new Img('.static', {
+            src: image || `./img/${name.split(' ').join('-')}.png`
+          }),
+          new Img('.animated', {
             src: image || `./img/${name.split(' ').join('-')}.png`
           })
         ]),
+      ]),
+      new Div('.description', [
+        P(description)
       ]),
       new Span('.tags', 
         tags.map( tag => new Span('.tag', {
           textContent: tag
         }))
       ),
-      new Div('.description', [
-        P(description)
-      ]),
     ])
   }
 }
