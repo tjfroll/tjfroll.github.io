@@ -3,19 +3,20 @@ class Project extends Div('.project') {
     append(this, [
       new A({
         target: '_blank',
-        href: url
+        href: url,
       }, [
         new Div('.name', {
           textContent: name
         }),
-        new Div('.image', [
-          // new Img('.static', {
-          //   src: image || `./img/${name.split(' ').join('-')}.png`
-          // }),
-          new Img('.animated', {
-            src: image || `./img/${name.split(' ').join('-')}.png`
-          })
-        ]),
+        new Div('.image', {
+          style: {
+            background: 'url(' + (image || `./img/${name.split(' ').join('-')}.png`) + ')'
+          }
+        })
+        //   new Img('.animated', {
+        //     src: image || `./img/${name.split(' ').join('-')}.png`
+        //   })
+        // ]),
       ]),
       new Div('.description', [
         P(description)
