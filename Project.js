@@ -1,9 +1,9 @@
 class Project extends Div('.project') {
-  created({ name, description, url, image, tags }) {
+  created({ name, description, href, image, tags }) {
     append(this, [
       new A({
         target: '_blank',
-        href: url,
+        href,
       }, [
         new Div('.name', {
           textContent: name
