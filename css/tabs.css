@@ -10,7 +10,8 @@
   color: #CCC;
   letter-spacing: .2rem;
   cursor: pointer;
-  transition: .15s color, background-color, border-color;
+  transition-duration: .15s;
+  transition-property: border-bottom-color, background-color, color;
   border-top: .3rem double transparent;
   border-bottom: .5rem double #222;
   border-right: .1rem solid transparent;
@@ -20,13 +21,13 @@
 .tabs a:hover {
   color: #EEE;
   text-shadow: 0 0 1rem #ca80d3;
-  border-bottom-color: #4dc1f9;
+  border-bottom-color: #7c4f82;
 }
 
 .tabs a.active {
   background-color: #444;
   color: #FFF;
-  border-bottom: none;
+  border-bottom-color: transparent;
   border-top: .3rem double #222;
   border-right: .1rem solid #222;
   border-left: .1rem solid #222;
