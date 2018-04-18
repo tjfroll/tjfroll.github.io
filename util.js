@@ -5,7 +5,14 @@ const {
   Div,
   Span,
   H1,
+  H2,
+  H3,
   Img,
+  Nav,
+  Section,
+  Article,
+  Header,
+  reactive
 } = alkali
 
 const append = (target, elems) => {

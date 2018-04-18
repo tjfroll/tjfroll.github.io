@@ -1,8 +1,8 @@
-const projects = [
+const experiments = [
   {
     name: 'panorama',
     description: 'An experiment in visualizing aggregated news across many sources.',
-    image: '',
+    image: './img/panorama.png',
     href: 'https://tjfroll.github.io/Panorama/',
     tags: [
       'data visualization'
@@ -11,7 +11,7 @@ const projects = [
   {
     name: 'pixel walker',
     description: 'Takes every pixel in an image on a random walk, customizable by direction of the walk and color channels affected. Source images are my artwork.',
-    image: '',
+    image: './img/pixel-walker.png',
     href: 'http://tjfroll.github.io/sketch/pixelwalker/',
     tags: [
       'creative coding',
@@ -21,7 +21,7 @@ const projects = [
   {
     name: 'and the lack thereof',
     description: 'A Wordpress blog of my design, maintained for 14 years.',
-    image: '',
+    image: './img/and-the-lack-thereof.png',
     href: 'http://thelackthereof.com/',
     tags: [
       'design',
@@ -31,7 +31,7 @@ const projects = [
   {
     name: 'weave',
     description: 'An experiment in testing the basic limits of SVG performance, this animates several layers of multicolored polylines.',
-    image: '',
+    image: './img/weave.png',
     href: 'http://tjfroll.github.io/svg-performance/',
     tags: [
       'creative coding',
@@ -41,7 +41,7 @@ const projects = [
   {
     name: 'confetti',
     description: 'A starfield of randomly generated polygons, built with three.js.',
-    image: '',
+    image: './img/confetti.png',
     href: 'http://tjfroll.github.io/sketch/threedizzle/',
     tags: [
       'creative coding',
@@ -51,7 +51,7 @@ const projects = [
   {
     name: 'spinwheel',
     description: 'A colorful looping rotation animation, built with P5.js (a port of Processing).',
-    image: '',
+    image: './img/spinwheel.png',
     href: 'http://tjfroll.github.io/sketch/glamboozle/',
     tags: [
       'creative coding',
@@ -61,7 +61,7 @@ const projects = [
   {
     name: 'cranberry thunderfunk',
     description: 'A tumblr of my design, featuring my sketches and artwork.',
-    image: '',
+    image: './img/cranberry-thunderfunk.png',
     href: 'http://thunderfunking.tumblr.com/',
     tags: [
       'design',

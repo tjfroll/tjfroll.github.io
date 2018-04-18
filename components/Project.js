@@ -1,28 +1,24 @@
-class Project extends Div('.project') {
+class Project extends Section('.project') {
   created({ name, description, href, image, tags }) {
     append(this, [
       new A({
         target: '_blank',
         href,
       }, [
-        new Div('.name', {
-          textContent: name
+        new H2('.name', {
+          textContent: name,
         }),
         new Div('.image', {
           style: {
-            background: 'url(' + (image || `./img/${name.split(' ').join('-')}.png`) + ')'
+            background: `url(${image})`
           }
         })
-        //   new Img('.animated', {
-        //     src: image || `./img/${name.split(' ').join('-')}.png`
-        //   })
-        // ]),
       ]),
       new Div('.description', [
         P(description)
       ]),
       new Span('.tags', 
-        tags.map( tag => new Span('.tag', {
+        tags.map( tag => new H3('.tag', {
           textContent: `${tag}${notLast(tags, tag) ? ',' : ''}`
         }))
       ),

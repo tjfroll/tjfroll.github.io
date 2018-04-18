@@ -1,4 +1,4 @@
-const social = new Div('.social', {
+const social = new Nav('.social', {
   content: socialItems.map( ({ title, href, icon }) => {
     return new A({
       title,
