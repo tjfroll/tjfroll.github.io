@@ -1,7 +1,7 @@
 const experiments = [
   {
     name: 'panorama',
-    description: 'An experiment in visualizing aggregated news across many sources.',
+    description: 'An attempt at exploring bias by visualizing aggregated news across many sources.',
     image: './img/panorama.png',
     href: 'https://tjfroll.github.io/Panorama/',
     tags: [
@@ -30,7 +30,7 @@ const experiments = [
   },
   {
     name: 'weave',
-    description: 'An experiment in testing the basic limits of SVG performance, this animates several layers of multicolored polylines.',
+    description: 'Testing some basic limits of SVG performance, this animates several layers of multicolored polylines.',
     image: './img/weave.png',
     href: 'http://tjfroll.github.io/svg-performance/',
     tags: [
@@ -40,7 +40,7 @@ const experiments = [
   },
   {
     name: 'confetti',
-    description: 'A starfield of randomly generated polygons, built with three.js.',
+    description: 'An infinite starfield of randomly generated polygons, built with three.js.',
     image: './img/confetti.png',
     href: 'http://tjfroll.github.io/sketch/threedizzle/',
     tags: [
