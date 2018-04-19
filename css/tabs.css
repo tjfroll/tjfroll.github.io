@@ -3,7 +3,7 @@
   /*border-top: .4rem double #CCC;*/
   z-index: 10000;
   font-family: Dosis, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 #tabs-nav a {
@@ -46,7 +46,12 @@
   border-right-color: transparent;
 }
 
-#tabs-nav .spacer {
+#tabs-nav .left-spacer {
+  flex: 1 0 1%;
+  border-bottom: .2rem solid #222;
+}
+
+#tabs-nav .right-spacer {
   flex: 1 0 50%;
   border-bottom: .2rem solid #222;
 }

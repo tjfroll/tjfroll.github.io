@@ -11,7 +11,7 @@
 
 #bio-img {
   float: left;
-  margin-right: .5rem;
+  margin-right: 1rem;
   margin-bottom: .2rem;
 }
 
@@ -43,6 +43,14 @@
   text-align: center;
   color: #CCC;
   font-size: 1.4rem;
+}
+
+#about-tab a {
+  color: #CCC;
+}
+
+#about-tab a:hover {
+  color: #ca80d3;
 }
 
 .highlight-purple {

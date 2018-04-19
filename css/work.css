@@ -1,12 +1,19 @@
 #work-tab {
   flex-direction: column;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .work-entry {
   display: flex;
   flex-direction: row;
   min-height: 50px;
+}
+
+.work-entry:hover .work-node {
+  background-color: #ca80d3;
+}
+.work-entry:hover .work-description p {
+  border-color: #ca80d3;
 }
 
 .work-dates {
@@ -39,24 +46,22 @@
 }
 
 .work-node {
-  border: 2px solid orange;
+  border: 2px solid #ca80d3;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-}
-
-.work-entry:hover .work-node {
-  background-color: orange;
+  transition: .15s background-color;
 }
 
 .work-line {
   height: 100%;
   width: 2px;
-  background-color: orange;
+  background-color: #ca80d3;
 }
 
 .work-description {
   margin-top: -2rem;
+  margin-bottom: 2rem;
   flex: 1 .1 50%;
   text-align: left;
   color: #CCC;
@@ -72,4 +77,6 @@
   margin-bottom: 1rem;
   padding: 1rem;
   background-color: rgba(0, 0, 0, .1);
+  border-left: 1px solid transparent;
+  transition: .15s border-color;
 }

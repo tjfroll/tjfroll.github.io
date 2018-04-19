@@ -83,6 +83,9 @@ header h1 {
 }
 
 p a {
+  color: #4dc1f9;
+}
+p a:hover {
   color: #ca80d3;
 }
 
