@@ -1,7 +1,7 @@
 const tabs = {}
 const navTabs = {}
 
-let current = 'experiments'
+let current = 'work'
 
 const setActive = (currentTab, currentNavTab) => {
   for (const text in tabs) {
@@ -16,7 +16,7 @@ const setActive = (currentTab, currentNavTab) => {
   }
 }
 
-for (const tabText of ['experiments', 'about']) {
+for (const tabText of ['experiments', 'work', 'about']) {
   const currentTab = tabs[tabText] || (tabs[tabText] = document.getElementById(`${tabText}-tab`))
   const currentNavTab = navTabs[tabText] || (navTabs[tabText] = document.getElementById(`${tabText}-nav`))
   currentNavTab.onclick = (e) => setActive(currentTab, currentNavTab)

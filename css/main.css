@@ -82,6 +82,10 @@ header h1 {
   z-index: 1000;
 }
 
+p a {
+  color: #ca80d3;
+}
+
 #social-nav {
   margin-left: 1rem;
 }
