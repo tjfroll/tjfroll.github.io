@@ -19,8 +19,8 @@ const setActive = (currentTab, currentNavTab) => {
 }
 
 for (const tabText of ['experiments', 'work', 'about']) {
-  const currentTab = tabs[tabText] || (tabs[tabText] = document.getElementById(`${tabText}-tab`))
-  const currentNavTab = navTabs[tabText] || (navTabs[tabText] = document.getElementById(`${tabText}-nav`))
+  const currentTab = tabs[tabText] || (tabs[tabText] = document.getElementById(tabText + '-tab'))
+  const currentNavTab = navTabs[tabText] || (navTabs[tabText] = document.getElementById(tabText + '-nav'))
   currentNavTab.onclick = (e) => setActive(currentTab, currentNavTab)
 }
 

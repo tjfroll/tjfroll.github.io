@@ -3,6 +3,19 @@
   padding: 2rem 0;
 }
 
+.work-summary {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.work-summary p {
+  color: #EEE;
+  font-size: 1.2rem;
+  max-width: 40rem;
+}
+
 .work-entry {
   display: flex;
   flex-direction: row;
@@ -17,7 +30,7 @@
 }
 
 .work-dates {
-  flex: 1 .1 200px;
+  flex: 0 .5 20%;
   text-align: right;
   color: #CCC;
   display: flex;
