@@ -1,27 +1,32 @@
-.project {
+#experiments-tab {
+  flex-direction: column-reverse;
+}
+
+.experiment {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 0;
   margin-top: .6rem;
+  cursor: pointer;
   // border-top: .6rem solid #444;
   transition-duration: .15s;
-  transition-properties: background-color, color, border-color;
+  transition-property: background-color, color, border-color;
   z-index: 10;
 }
 
-h1 + .project {
+h1 + .experiment {
   border-top: none;
 }
 
-.project a {
+.experiment a {
   height: 10rem;
   overflow: hidden;
   position: relative;
 }
 
-.project .name {
+.experiment .name {
   position: absolute;
   top: .5rem;
   left: 4rem;
@@ -34,7 +39,7 @@ h1 + .project {
   text-shadow: 0 0 .2rem #000;
 }
 
-.project .description {
+.experiment .description {
   position: absolute;
   left: 2rem;
   bottom: 1rem;
@@ -52,7 +57,7 @@ h1 + .project {
   max-width: 40rem;
 }
 
-.project .image {
+.experiment .image {
   overflow: hidden;
   position: absolute;
   top: -20rem;
@@ -74,14 +79,14 @@ h1 + .project {
   animation-timing-function: linear;
 }
 
-.project .tags {
+.experiment .tags {
   position: absolute;
   top: 1rem;
   right: 4rem;
   z-index: 10;
 }
 
-.project .tag {
+.experiment .tag {
   padding: .2rem .5rem;
   color: #CCC;
   display: inline;
@@ -91,7 +96,7 @@ h1 + .project {
 }
 
 
-.project:hover {
+.experiment:hover {
   // background-color: #555;
   // border-color: hsla(202, 65%, 66%, 1);
   box-shadow: 0 0 1rem .1rem #000;
@@ -106,20 +111,20 @@ h1 + .project {
   }
 }
 
-.project:hover .tag {
+.experiment:hover .tag {
   color: #DDD;
 }
 
-.project:hover .image {
+.experiment:hover .image {
   opacity: .75;
   animation-play-state: running;
 }
 
-.project:hover .name, .project:active .name {
+.experiment:hover .name, .experiment:active .name {
   color: #FFF;
 }
 
-.project:hover .description, .project:active .description {
+.experiment:hover .description, .experiment:active .description {
   display: block;
   opacity: 1;
 }

@@ -1,4 +1,4 @@
-.tabs {
+#tabs-nav {
   display: flex;
   /*border-top: .4rem double #CCC;*/
   z-index: 10000;
@@ -6,10 +6,11 @@
   font-size: 1.1rem;
 }
 
-.tabs a {
+#tabs-nav a {
   color: #CCC;
   letter-spacing: .2rem;
   cursor: pointer;
+  padding: .2rem 2rem;
   transition-duration: .15s;
   transition-property: border-bottom-color, background-color, color;
   border-top: .3rem double transparent;
@@ -18,13 +19,13 @@
   border-left: .1rem solid transparent;
 }
 
-.tabs a:hover {
+#tabs-nav a:hover {
   color: #EEE;
   text-shadow: 0 0 1rem #ca80d3;
   border-bottom-color: #7c4f82;
 }
 
-.tabs a.active {
+#tabs-nav a.active {
   background-color: #444;
   color: #FFF;
   border-bottom-color: transparent;
@@ -34,26 +35,31 @@
   text-shadow: 0 0 1rem #000;
   /*box-shadow: 0 -.1rem .2rem 0 #777;*/
 }
-.tabs a.active:hover {
+#tabs-nav a.active:hover {
   color: #FFF;
   text-shadow: none;
 }
-.tabs a.active:first-child {
+#tabs-nav a.active:first-child {
   border-left-color: transparent;
 }
-.tabs a.active:last-child {
+#tabs-nav a.active:last-child {
   border-right-color: transparent;
 }
 
-.tabs .spacer {
+#tabs-nav .spacer {
   flex: 1 0 50%;
   border-bottom: .2rem solid #222;
 }
 
-.tab {
+.tab-container {
   overflow: hidden;
-  display: flex;
-  flex-direction: column-reverse;
-  padding-bottom: 10rem;
+  display: none;
+  padding-bottom: .5rem;
+  margin-bottom: 9rem;
+  border-bottom: .5rem double #222;
   background-color: #444;
+}
+
+.tab-container.active {
+  display: flex;
 }

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
 
-    <link rel="icon" href="./img/thumb.png" sizes="32x32">
+    <link rel="icon" href="./img/favicon.png" sizes="32x32">
     <link rel="icon" href="./img/thumb.png" sizes="192x192">
 
     <meta name="description" content="Tim Froehlich: Development & Design">
@@ -32,7 +32,8 @@
 
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/tabs.css" />
-    <link rel="stylesheet" href="./css/project.css" />
+    <link rel="stylesheet" href="./css/experiments.css" />
+    <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Sarala:700" rel="stylesheet">
 
@@ -51,11 +52,145 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
     <script src="https://rawgit.com/kriszyp/alkali/master/dist/index.js"></script>
-    <script src="./util.js"></script>
-    <script src="./data/experimentItems.js"></script>
-    <script src="./data/socialItems.js"></script>
-    <script src="./components/Social.js"></script>
-    <script src="./components/Project.js"></script>
+    <header>
+      <nav id="social-nav">
+        <a title="Github" href="https://github.com/tjfroll" target="_blank">
+          <i class="fa fa-fw fa-2x fa-github"></i>
+        </a>
+        <a title="LinkedIn" href="https://linkedin.com/in/tjfroll" target="_blank">
+          <i class="fa fa-fw fa-2x fa-linkedin-square"></i>
+        </a>
+        <a title="Resume" href="./files/TJF_Resume.pdf" target="_blank">
+          <i class="fa fa-fw fa-2x fa-file-pdf-o"></i>
+        </a>
+        <a title="Twitter" href="https://twitter.com/thunderfunking" target="_blank">
+          <i class="fa fa-fw fa-2x fa-twitter-square"></i>
+        </a>
+        <a title="Instagram" href="https://instagram.com/thunderfunking" target="_blank">
+          <i class="fa fa-fw fa-2x fa-instagram"></i>
+        </a>
+      </nav>
+      <h1>tim froehlich</h1>
+    </header>
+    <nav id="tabs-nav">
+      <a id="experiments-nav" title="experiments">experiments</a>
+      <a id="about-nav" title="about" class="">about</a>
+      <span class="spacer"></span>
+    </nav>
+    <div id="viewport">
+      <article id="experiments-tab" class="tab-container">
+        <section class="experiment">
+          <a target="_blank" href="https://tjfroll.github.io/brklyn.txt/">
+            <h2 class="name">brklyn.txt</h2>
+            <div class="image" style="background: url('./img/brklyn-txt.png');"></div>
+          </a>
+          <div class="description">
+            <p>A brief attempt at a text-based stream of consciousness narrative, from the perspective of my apartment's balcony.</p>
+          </div>
+          <span class="tags">
+            <h3 class="tag">creative coding,</h3><h3 class="tag">writing</h3>
+          </span>
+        </section>
+        <section class="experiment">
+          <a target="_blank" href="http://thunderfunking.tumblr.com/">
+            <h2 class="name">cranberry thunderfunk</h2>
+            <div class="image" style="background: url('./img/cranberry-thunderfunk.png');"></div>
+          </a>
+          <div class="description">
+            <p>A tumblr of my design, featuring my sketches and artwork.</p>
+          </div>
+          <span class="tags">
+            <h3 class="tag">design,</h3><h3 class="tag">photoshop</h3>
+          </span>
+        </section>
+        <section class="experiment">
+          <a target="_blank" href="http://tjfroll.github.io/sketch/glamboozle/">
+            <h2 class="name">spinwheel</h2>
+            <div class="image" style="background: url('./img/spinwheel.png');"></div>
+          </a>
+          <div class="description">
+            <p>A colorful looping rotation animation, built with P5.js (a port of Processing).</p>
+          </div>
+          <span class="tags">
+            <h3 class="tag">creative coding,</h3><h3 class="tag">processing</h3>
+          </span>
+        </section>
+        <section class="experiment">
+          <a target="_blank" href="http://tjfroll.github.io/sketch/threedizzle/">
+            <h2 class="name">confetti</h2>
+            <div class="image" style="background: url('./img/confetti.png');"></div>
+          </a>
+          <div class="description">
+            <p>An infinite starfield of randomly generated polygons, built with three.js.</p>
+          </div>
+          <span class="tags">
+            <h3 class="tag">creative coding,</h3><h3 class="tag">webgl</h3>
+          </span>
+        </section>
+        <section class="experiment">
+          <a target="_blank" href="http://tjfroll.github.io/svg-performance/">
+            <h2 class="name">weave</h2>
+            <div class="image" style="background: url('./img/weave.png');"></div>
+          </a>
+          <div class="description">
+            <p>Testing some basic limits of SVG performance, this animates several layers of multicolored polylines.</p>
+          </div>
+          <span class="tags">
+            <h3 class="tag">creative coding,</h3><h3 class="tag">svg</h3>
+          </span>
+        </section>
+        <section class="experiment">
+          <a target="_blank" href="http://thelackthereof.com/">
+            <h2 class="name">and the lack thereof</h2>
+            <div class="image" style="background: url('./img/and-the-lack-thereof.png');"></div>
+          </a>
+          <div class="description">
+            <p>A Wordpress blog of my design, maintained for 14 years.</p>
+          </div>
+          <span class="tags">
+            <h3 class="tag">design,</h3><h3 class="tag">writing</h3>
+          </span>
+        </section>
+        <section class="experiment">
+          <a target="_blank" href="http://tjfroll.github.io/sketch/pixelwalker/">
+            <h2 class="name">pixel walker</h2>
+            <div class="image" style="background: url('./img/pixel-walker.png');"></div>
+          </a>
+          <div class="description">
+            <p>Takes every pixel in an image on a random walk, customizable by direction of the walk and color channels affected. Source images are my artwork.</p>
+          </div>
+          <span class="tags">
+            <h3 class="tag">creative coding,</h3><h3 class="tag">canvas</h3>
+          </span>
+        </section>
+        <section class="experiment">
+          <a target="_blank" href="https://tjfroll.github.io/Panorama/">
+            <h2 class="name">panorama</h2>
+            <div class="image" style="background: url('./img/panorama.png');"></div>
+          </a>
+          <div class="description">
+            <p>An attempt at exploring bias by visualizing aggregated news across many sources.</p>
+          </div>
+          <span class="tags">
+            <h3 class="tag">data visualization</h3>
+          </span>
+        </section>
+      </article>
+      <article id="about-tab" class="tab-container">
+        <section>
+          <img id="bio-img" src="./img/bio.jpg" width="150">
+          <h6>Hello!</h6>
+          <p>I'm Tim, a web developer, technologist, and all-around internet enthusiast based in Brooklyn, NY. I've been building websites of all shapes and sizes for fifteen years, with a focus on rendering complex information and designing intuitive and sophisticated interfaces.</p>
+          <p>My dream is to close the gap between <span class="highlight-purple">thought</span> and <span class="highlight-purple">creation</span>. Over my career, I have witnessed the fatal disconnect between the design of our technology and the needs of our users. I craft tools that bridge this divide: intuitive software that enhances our creative and intellectual abilities, that improves our ability to communicate ideas and express ourselves as complete human beings.</p>
+          <p>As a developer and designer. I've worked directly with users, clients, and stakeholders to draft specifications and mockups, implemented these requests and iterated based on feedback, tracked usage and behavior to identify failures and successes, and reported these results back to stakeholders for review. I believe in a holistic approach to development - I will take on any task necessary that will achieve the best result for my users.</p>
+          <p>If you share my enthusiasm for building powerful, intuitive software, I'd love to talk to you.</p>
+          <blockquote>
+            email: tjfroll<span class="highlight-blue">@</span>gmail.com<br />
+            twitter: <span class="highlight-blue">@</span>thunderfunking
+          </blockquote>
+        </section>
+      </article>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>

@@ -1,0 +1,54 @@
+#about-tab {
+  flex-direction: row;
+  padding: 1rem;
+  justify-content: center;
+}
+
+#about-tab section {
+  padding: 1rem;
+  max-width: 100rem;
+}
+
+#bio-img {
+  float: left;
+  margin-right: .5rem;
+  margin-bottom: .2rem;
+}
+
+#about-bio {
+  text-align: left;
+  flex: 1 1 70%;
+}
+
+#about-tab img {
+  border: .2rem solid #222;
+  box-shadow: 0 0 1rem 0 #222;
+}
+
+#about-tab h6 {
+  color: #FFF;
+  font-size: 1.7rem;
+  letter-spacing: .1rem;
+  margin-bottom: 1rem;  
+}
+
+#about-tab p {
+  font-size: 1.1rem;
+  max-width: 40rem;
+  color: #EEE;
+  margin-bottom: 1rem;
+}
+
+#about-tab blockquote {
+  text-align: center;
+  color: #CCC;
+  font-size: 1.4rem;
+}
+
+.highlight-purple {
+  color: #ca80d3;
+}
+
+.highlight-blue {
+  color: #4dc1f9;
+}
