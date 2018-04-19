@@ -1,7 +1,7 @@
 const tabs = {}
 const navTabs = {}
 
-let current = 'work'
+let current = 'experiments'
 
 const setActive = (currentTab, currentNavTab) => {
   for (const text in tabs) {
