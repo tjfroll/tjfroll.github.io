@@ -10,23 +10,30 @@
   color: #CCC;
   letter-spacing: .2rem;
   cursor: pointer;
-  padding: .2rem 2rem;
+  padding: .3rem 1.9rem;
   transition-duration: .15s;
-  transition-property: border-bottom-color, background-color, color;
-  border-top: .3rem double transparent;
-  border-bottom: .5rem double #222;
-  border-right: .1rem solid transparent;
-  border-left: .1rem solid transparent;
+  transition-property: border-bottom-color, background-color, color, border-radius;
+  border-top: .3rem double #222;
+  border-bottom: .5rem double #444;
+  border-right: .1rem solid #222;
+  border-left: .1rem solid #222;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  margin: 0 .1rem;
 }
 
 #tabs-nav a:hover {
   color: #EEE;
   text-shadow: 0 0 1rem #ca80d3;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   border-bottom-color: #7c4f82;
 }
 
 #tabs-nav a.active {
   background-color: #444;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   color: #FFF;
   border-bottom-color: transparent;
   border-top: .3rem double #222;
@@ -47,12 +54,14 @@
 }
 
 #tabs-nav .left-spacer {
-  flex: 1 0 1%;
+  flex: .5 0 0;
   border-bottom: .2rem solid #222;
 }
 
 #tabs-nav .right-spacer {
-  flex: 1 0 50%;
+  position: relative;
+  flex: 1 0 30%;
+  text-align: right;
   border-bottom: .2rem solid #222;
 }
 
