@@ -64,6 +64,7 @@ header {
 h1 {
   font-family: 'Sarala', sans-serif;
   letter-spacing: -.2rem;
+  word-spacing: .2rem;
   position: absolute;
   right: 1rem;
   text-shadow: 0 0 1rem #444;
