@@ -6,8 +6,8 @@
 .work-summary {
   text-align: left;
   display: flex;
-  justify-content: center;
   margin-bottom: 2rem;
+  padding-left: calc(20% + 14px);
 }
 
 .work-summary p {
