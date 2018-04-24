@@ -76,6 +76,10 @@ h1 {
   border-top: .5rem double #222
 }
 
+a {
+  transition: .15s color;
+}
+
 p a {
   color: #4dc1f9;
 }

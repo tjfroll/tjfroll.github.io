@@ -50,6 +50,10 @@
   color: #CCC;
 }
 
+#about-tab p a {
+  color: #4dc1f9;
+}
+
 #about-tab a:hover {
   color: #ca80d3;
 }
