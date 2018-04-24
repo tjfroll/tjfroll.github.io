@@ -7,13 +7,14 @@
   text-align: left;
   display: flex;
   margin-bottom: 2rem;
-  padding-left: calc(20% + 14px);
+  padding-left: 15%;
+  padding-right: 5%;
 }
 
 .work-summary p {
   color: #EEE;
-  font-size: 1.2rem;
-  max-width: 40rem;
+  font-size: 1.4rem;
+  max-width: 45rem;
 }
 
 .work-entry {
@@ -30,7 +31,9 @@
 }
 
 .work-dates {
-  flex: 0 .5 20%;
+  font-size: 1.2rem;
+  margin-top: -.4rem;
+  flex: 0 .2 15%;
   text-align: right;
   color: #CCC;
   display: flex;
@@ -85,6 +88,7 @@
 }
 
 .work-description p {
+  font-size: 1.2rem;
   max-width: 40rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
