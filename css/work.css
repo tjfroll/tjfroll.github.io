@@ -33,6 +33,9 @@
 .work-entry:hover .work-description p {
   border-color: #ca80d3;
 }
+.work-entry:hover .work-description .work-img {
+  border-left-color: #ca80d3;
+}
 
 .work-dates {
   font-size: 1.2rem;
@@ -98,7 +101,7 @@
   margin-bottom: 1rem;
   padding: 1rem;
   background-color: rgba(0, 0, 0, .1);
-  border-left: 1px solid transparent;
+  border-left: .1rem solid transparent;
   transition: .15s border-color;
 }
 
@@ -106,18 +109,20 @@
   text-align: center;
   overflow: hidden;
   max-width: 40rem;
+  margin-top: -1rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, .1);
+  border-left: .1rem solid transparent;
 }
 
 .work-img img {
   width: 30vw;
   min-width: 22rem;
-  margin: .2rem 0;
-  border-left: .1rem solid #222;
-  padding: .5rem;
-  background-color: rgba(0, 0, 0, .1);
+  margin-bottom: .2rem;
+  border: .1rem solid #222;
   transition: .15s border-color;
 }
 
 .work-img img:hover {
-  border-left-color: #4dc1f9;
+  border-color: #4dc1f9;
 }
