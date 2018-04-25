@@ -1,7 +1,7 @@
 const tabs = {}
 const navTabs = {}
 
-let current = window.location.hash.slice(1) || 'experiments'
+let current = window.location.hash.slice(1) || 'work'
 
 const setActive = (currentTab, currentNavTab) => {
   for (const text in tabs) {
