@@ -30,6 +30,7 @@ h1 + .experiment {
   position: absolute;
   top: .5rem;
   left: 4rem;
+  max-width: 55%;
   z-index: 100;
   font-style: italic;
   font-size: 2.1rem;
@@ -97,7 +98,7 @@ h1 + .experiment {
 }
 
 
-.experiment:hover {
+.experiment:hover, .experiment:active {
   // background-color: #555;
   // border-color: hsla(202, 65%, 66%, 1);
   box-shadow: 0 0 1rem .1rem #000;
@@ -112,11 +113,11 @@ h1 + .experiment {
   }
 }
 
-.experiment:hover .tag {
+.experiment:hover .tag, .experiment:active .image {
   color: #DDD;
 }
 
-.experiment:hover .image {
+.experiment:hover .image, .experiment:active .image {
   opacity: .75;
   animation-play-state: running;
 }
