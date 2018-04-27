@@ -26,7 +26,7 @@
   position: absolute;
   font-variant: all-small-caps;
   top: .5rem;
-  left: 2rem;
+  left: 1.5rem;
   max-width: 55%;
   z-index: 100;
   line-height: 2rem;
@@ -34,7 +34,6 @@
   letter-spacing: .1rem;
   font-weight: bold;
   color: #EEE;
-  text-shadow: 0 0 .2rem #000;
   font-family: 'Dosis', sans-serif;
 }
 
@@ -44,11 +43,9 @@
   left: 0;
   right: 0;
   font-size: .9rem;
-  padding: .5rem 1rem;
-  padding-left: 2rem;
+  padding: .5rem 1.5rem;
   color: #DDD;
   transition: .15s color;
-  text-shadow: 0 0 .2rem #000;
   background-color: rgba(0, 0, 0, .3);
 }
 
@@ -64,7 +61,7 @@
   background-position: 0rem -10rem;
   background-clip: padding-box;
   z-index: -1;
-  opacity: .5;
+  opacity: .45;
   transition: .15s opacity;
   animation-duration: 100s;
   animation-name: translate;
@@ -88,7 +85,6 @@
   color: #CCC;
   font-size: .9rem;
   font-weight: bold;
-  text-shadow: 0 0 3px #000;
   color: #EEE;
 }
 
@@ -104,4 +100,10 @@
 .portfolio a:hover .image, .portfolio:active .image {
   opacity: .7;
   animation-play-state: running;
+}
+.portfolio a:hover .name {
+  text-shadow: 0 0 .2rem #000;
+}
+.portfolio:hover .tag {
+  text-shadow: 0 0 .2rem #000;
 }

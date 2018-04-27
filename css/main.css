@@ -2,13 +2,25 @@
   html {
     font-size: 85%;
   }
+  #tabs-nav {
+    padding-left: .7rem;
+  }
   #tabs-nav a {
-    padding: .3rem .5rem;
+    padding: .3rem .4rem;
     font-size: 1rem;
   }
   header h1 {
-    padding-left: 1rem;
     font-size: 2rem;
+    padding-left: 1rem;
+  }
+  .portfolio .name {
+    left: 1rem;
+  }
+  .portfolio .description {
+    padding-left: 1rem;
+  }
+  .portfolio .tags {
+    right: 1rem;
   }
   #bio-img {
     float: none;
@@ -26,8 +38,7 @@
     font-size: 90%;
   }
   header h1 {
-    padding-left: 1.5rem;
-    font-size: 2.8rem;
+    font-size: 2.7rem;
   }
   .history-spacer {
     flex-grow: .1;
