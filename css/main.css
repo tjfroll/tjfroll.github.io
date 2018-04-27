@@ -13,6 +13,12 @@
     padding-left: 1rem;
     font-size: 2rem;
   }
+  #bio-img {
+    float: none;
+    width: 50vw;
+    max-width: 18rem;
+    margin: 0 20vw 1rem 20vw;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 799px) {
