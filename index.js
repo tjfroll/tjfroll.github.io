@@ -1,8 +1,6 @@
 const tabs = {}
 const navTabs = {}
 
-let current = window.location.hash.slice(1) || 'portfolio'
-
 const setActive = (currentTab, currentNavTab) => {
   for (const text in tabs) {
     const tab = tabs[text]
@@ -22,6 +20,12 @@ for (const tabText of ['portfolio', 'resume', 'history', 'about']) {
   const currentTab = tabs[tabText] || (tabs[tabText] = document.getElementById(tabText + '-tab'))
   const currentNavTab = navTabs[tabText] || (navTabs[tabText] = document.getElementById(tabText + '-nav'))
   currentNavTab.onclick = (e) => setActive(currentTab, currentNavTab)
+}
+
+let current = window.location.hash.slice(1)
+if (!current || !tabs[current]) {
+  window.location.hash = 'portfolio'
+  current = 'portfolio'
 }
 
 setActive(tabs[current], navTabs[current])
