@@ -29,7 +29,3 @@ if (!current || !tabs[current]) {
 }
 
 setActive(tabs[current], navTabs[current])
-
-if (Modernizr.touch) {
-  tabs['resume'].classList.add('no-pdf')
-}

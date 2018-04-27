@@ -81,18 +81,24 @@ body {
 #resume-tab {
   height: 85vh;
   margin: 0;
+  flex-direction: column;
 }
-
-#resume-tab .fallback {
+#resume-pdf {
   display: none;
 }
-
-#resume-tab.no-pdf embed {
+#resume-fallback {
+  padding: 1rem;
+  color: #CCC;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.no-touchevents #resume-fallback {
   display: none;
 }
-
-#resume-tab.no-pdf .fallback {
-  display: block;
+.no-touchevents #resume-pdf {
+  height: 100%;
+  display: flex;
 }
 
 #portfolio-tab {
