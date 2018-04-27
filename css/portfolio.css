@@ -28,6 +28,7 @@
   left: 2rem;
   max-width: 55%;
   z-index: 100;
+  line-height: 2rem;
   font-size: 2.2rem;
   letter-spacing: .1rem;
   font-weight: bold;
@@ -74,16 +75,17 @@
 
 .portfolio .tags {
   position: absolute;
+  text-align: right;
   top: 1rem;
-  right: 2rem;
+  right: 1rem;
   z-index: 10;
 }
 
 .portfolio .tag {
   padding: .2rem .5rem;
+  line-height: 1rem;
   color: #CCC;
-  display: inline;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: bold;
   text-shadow: 0 0 3px #000;
   color: #EEE;

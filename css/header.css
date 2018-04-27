@@ -2,11 +2,10 @@
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: flex-end;
   align-items: flex-end;
-  padding-top: 1rem;
-  padding-right: 1rem;
 }
 
 h1 {
@@ -14,6 +13,7 @@ h1 {
   text-shadow: 0 0 .2rem #000;
   font-size: 3.5rem;
   color: #CCC;
+  padding-top: 1rem;
   padding-left: 2rem;
   padding-right: 1rem;
   line-height: 100%;
@@ -40,6 +40,7 @@ h1 {
 
 #tabs-nav {
   display: flex;
+  padding-top: 1rem;
   margin-bottom: -.5rem;
   z-index: 100;
   font-family: 'Dosis', sans-serif;
