@@ -1,65 +1,56 @@
-#experiments-tab {
+#portfolio-tab {
   flex-direction: column;
 }
 
-.experiment {
+.portfolio {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 0;
   margin-top: .6rem;
-  cursor: pointer;
-  // border-top: .6rem solid #444;
   transition-duration: .15s;
   transition-property: background-color, color, border-color;
   z-index: 10;
+  border-top: .2rem solid #222;
 }
 
-h1 + .experiment {
-  border-top: none;
-}
-
-.experiment a {
+.portfolio a {
   height: 10rem;
   overflow: hidden;
   position: relative;
 }
 
-.experiment .name {
+.portfolio .name {
   position: absolute;
+  font-variant: all-small-caps;
   top: .5rem;
-  left: 4rem;
+  left: 2rem;
   max-width: 55%;
   z-index: 100;
-  font-style: italic;
-  font-size: 2.1rem;
+  font-size: 2.2rem;
   letter-spacing: .1rem;
   font-weight: bold;
-  color: #DDD;
+  color: #EEE;
   text-shadow: 0 0 .2rem #000;
+  font-family: 'Dosis', sans-serif;
 }
 
-.experiment .description {
+.portfolio .description {
   position: absolute;
-  font-size: 1.2rem;
-  left: 2rem;
-  bottom: 1rem;
-  min-height: 1.5rem;
-  transition: .25s opacity;
-  background-color: rgba(51, 51, 51, 0.7);
-  opacity: 0;
-  display: none;
-  padding: .2rem .5rem;
-  border-radius: .2rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: .9rem;
+  padding: .5rem 1rem;
+  padding-left: 2rem;
+  color: #DDD;
+  transition: .15s color;
+  text-shadow: 0 0 .2rem #000;
+  background-color: rgba(0, 0, 0, .3);
 }
 
-.description p {
-  color: #CCC;
-  max-width: 40rem;
-}
-
-.experiment .image {
+.portfolio .image {
   overflow: hidden;
   position: absolute;
   top: -20rem;
@@ -71,7 +62,7 @@ h1 + .experiment {
   background-position: 0rem -10rem;
   background-clip: padding-box;
   z-index: -1;
-  opacity: .55;
+  opacity: .5;
   transition: .15s opacity;
   animation-duration: 100s;
   animation-name: translate;
@@ -81,27 +72,21 @@ h1 + .experiment {
   animation-timing-function: linear;
 }
 
-.experiment .tags {
+.portfolio .tags {
   position: absolute;
   top: 1rem;
-  right: 4rem;
+  right: 2rem;
   z-index: 10;
 }
 
-.experiment .tag {
+.portfolio .tag {
   padding: .2rem .5rem;
   color: #CCC;
   display: inline;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   text-shadow: 0 0 3px #000;
-}
-
-
-.experiment:hover, .experiment:active {
-  // background-color: #555;
-  // border-color: hsla(202, 65%, 66%, 1);
-  box-shadow: 0 0 1rem .1rem #000;
+  color: #EEE;
 }
 
 @keyframes translate {
@@ -109,24 +94,11 @@ h1 + .experiment {
     background-position: 0rem 0rem;
   }
   to {
-    background-position: 0 -1000rem;
+    background-position: 0 -800rem;
   }
 }
 
-.experiment:hover .tag, .experiment:active .image {
-  color: #DDD;
-}
-
-.experiment:hover .image, .experiment:active .image {
-  opacity: .75;
+.portfolio a:hover .image, .portfolio:active .image {
+  opacity: .7;
   animation-play-state: running;
-}
-
-.experiment:hover .name, .experiment:active .name {
-  color: #FFF;
-}
-
-.experiment:hover .description, .experiment:active .description {
-  display: block;
-  opacity: 1;
 }

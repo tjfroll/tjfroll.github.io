@@ -25,13 +25,13 @@
 
     <meta content="width=device-width,initial-scale=1,minimum-scale=1" name="viewport">
 
-    <link rel="stylesheet" href="./css/tabs.css" />
-    <link rel="stylesheet" href="./css/experiments.css" />
-    <link rel="stylesheet" href="./css/work.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+    <link rel="stylesheet" href="./css/history.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700|Sarala:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400|Dosis:400,700|Titillium+Web:200" rel="stylesheet">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43748952-3"></script>
     <script>
@@ -45,15 +45,19 @@
   </head>
   <body>
     <header>
+      <h1>Tim Froehlich</h1>
+      <nav id="tabs-nav">
+        <a id="portfolio-nav" title="portfolio">PORTFOLIO</a>
+        <a id="resume-nav" title="resume">RESUME</a>
+        <a style="display: none;" id="history-nav" title="history">HISTORY</a>
+        <a id="about-nav" title="about" class="">ABOUT</a>
+      </nav>
       <nav id="social-nav">
         <a title="Github" href="https://github.com/tjfroll" target="_blank">
           <i class="fab fa-fw fa-2x fa-github"></i>
         </a>
         <a title="LinkedIn" href="https://linkedin.com/in/tjfroll" target="_blank">
           <i class="fab fa-fw fa-2x fa-linkedin"></i>
-        </a>
-        <a title="Resume" href="./TJF_Resume.pdf" target="_blank">
-          <i class="far fa-fw fa-2x fa-file-pdf"></i>
         </a>
         <a title="Twitter" href="https://twitter.com/thunderfunking" target="_blank">
           <i class="fab fa-fw fa-2x fa-twitter-square"></i>
@@ -64,37 +68,41 @@
         <a title="Medium" href="https://medium.com/@thunderfunking" target="_blank">
           <i class="fab fa-fw fa-2x fa-medium"></i>
         </a>
-      </nav>
+      </div>
     </header>
 
-    <nav id="tabs-nav">
-      <span class="left-spacer"></span>
-      <a id="experiments-nav" title="experiments">experiments</a>
-      <a id="work-nav" title="work">work</a>
-      <a id="about-nav" title="about" class="">about</a>
-      <div class="right-spacer">
-        <h1>tim froehlich</h1>
-      </div>
-    </nav>
-
     <div id="viewport">
-      <article id="experiments-tab" class="tab-container">
-        <section class="experiment">
-          <a target="_blank" href="https://tjfroll.github.io/Panorama/">
-            <h2 class="name">panorama</h2>
-            <div class="image" style="background: url('./img/panorama.png');"></div>
+      <article id="portfolio-tab" class="tab-container">
+        <section class="portfolio">
+          <a target="_blank" href="https://dev.doctorevidence.com/doc-datas-dynamic-interactive-visualizations-7887aec7b616">
+            <h2 class="name">DOCTOR EVIDENCE</h2>
+            <div class="image" style="background: url('./img/portfolio-dre.png');"></div>
           </a>
-          <div class="description">
-            <p>Exploring bias by visualizing aggregated news across many sources.</p>
-          </div>
+          <span class="tags">
+            <h3 class="tag">data visualization,</h3><h3 class="tag">UX</h3>
+          </span>
+          <p class="description">
+            Visualizations, graphs, tables, and reporting tools for a clinical data analysis platform.
+          </p>
+          <p class="explanation">
+          </p>
+        </section>
+        <section class="portfolio">
+          <a target="_blank" href="https://tjfroll.github.io/Panorama/">
+            <h2 class="name">PANORAMA</h2>
+            <div class="image" style="background: url('./img/portfolio-panorama.png');"></div>
+          </a>
+          <p class="description">
+            Exploring bias by visualizing aggregated news across many sources.
+          </p>
           <span class="tags">
             <h3 class="tag">data visualization</h3>
           </span>
         </section>
-        <section class="experiment">
+        <section class="portfolio">
           <a target="_blank" href="http://tjfroll.github.io/sketch/pixelwalker/">
-            <h2 class="name">pixel walker</h2>
-            <div class="image" style="background: url('./img/pixel-walker.jpg');"></div>
+            <h2 class="name">PIXEL WALKER</h2>
+            <div class="image" style="background: url('./img/portfolio-pixel-walker.jpg');"></div>
           </a>
           <div class="description">
             <p>Takes every pixel in an image on a random walk, customizable by direction of the walk and color channels affected. Source images are my artwork.</p>
@@ -103,10 +111,10 @@
             <h3 class="tag">creative coding,</h3><h3 class="tag">canvas</h3>
           </span>
         </section>
-        <section class="experiment">
+        <section class="portfolio">
           <a target="_blank" href="http://thelackthereof.com/">
-            <h2 class="name">and the lack thereof</h2>
-            <div class="image" style="background: url('./img/and-the-lack-thereof.jpg');"></div>
+            <h2 class="name">AND THE LACK THEREOF</h2>
+            <div class="image" style="background: url('./img/portfolio-and-the-lack-thereof.jpg');"></div>
           </a>
           <div class="description">
             <p>A Wordpress blog of my design, maintained for 14 years.</p>
@@ -115,10 +123,10 @@
             <h3 class="tag">design,</h3><h3 class="tag">writing</h3>
           </span>
         </section>
-        <section class="experiment">
+        <section class="portfolio">
           <a target="_blank" href="http://tjfroll.github.io/sketch/threedizzle/">
-            <h2 class="name">confetti</h2>
-            <div class="image" style="background: url('./img/confetti.jpg');"></div>
+            <h2 class="name">CONFETTI</h2>
+            <div class="image" style="background: url('./img/portfolio-confetti.jpg');"></div>
           </a>
           <div class="description">
             <p>An infinite starfield of randomly generated polygons, built with three.js.</p>
@@ -127,10 +135,10 @@
             <h3 class="tag">creative coding,</h3><h3 class="tag">webgl</h3>
           </span>
         </section>
-        <section class="experiment">
+        <section class="portfolio">
           <a target="_blank" href="http://tjfroll.github.io/sketch/glamboozle/">
-            <h2 class="name">spinwheel</h2>
-            <div class="image" style="background: url('./img/spinwheel.jpg');"></div>
+            <h2 class="name">SPINWHEEL</h2>
+            <div class="image" style="background: url('./img/portfolio-spinwheel.jpg');"></div>
           </a>
           <div class="description">
             <p>A colorful looping rotation animation, built with P5.js (a port of Processing).</p>
@@ -139,10 +147,10 @@
             <h3 class="tag">creative coding,</h3><h3 class="tag">processing</h3>
           </span>
         </section>
-        <section class="experiment">
+        <section class="portfolio">
           <a target="_blank" href="http://tjfroll.github.io/svg-performance/">
-            <h2 class="name">weave</h2>
-            <div class="image" style="background: url('./img/weave.jpg');"></div>
+            <h2 class="name">WEAVE</h2>
+            <div class="image" style="background: url('./img/portfolio-weave.jpg');"></div>
           </a>
           <div class="description">
             <p>Testing some basic limits of SVG performance, this animates several layers of multicolored polylines.</p>
@@ -151,10 +159,10 @@
             <h3 class="tag">creative coding,</h3><h3 class="tag">svg</h3>
           </span>
         </section>
-        <section class="experiment">
+        <section class="portfolio">
           <a target="_blank" href="http://thunderfunking.tumblr.com/">
-            <h2 class="name">cranberry thunderfunk</h2>
-            <div class="image" style="background: url('./img/cranberry-thunderfunk.jpg');"></div>
+            <h2 class="name">CRANBERRY THUNDERFUNK</h2>
+            <div class="image" style="background: url('./img/portfolio-cranberry-thunderfunk.jpg');"></div>
           </a>
           <div class="description">
             <p>A tumblr of my design, featuring my sketches and artwork.</p>
@@ -163,10 +171,10 @@
             <h3 class="tag">design,</h3><h3 class="tag">photoshop</h3>
           </span>
         </section>
-        <section class="experiment">
+        <section class="portfolio">
           <a target="_blank" href="https://tjfroll.github.io/brklyn.txt/">
-            <h2 class="name">brklyn.txt</h2>
-            <div class="image" style="background: url('./img/brklyn-txt.png');"></div>
+            <h2 class="name">BRKLYN.TXT</h2>
+            <div class="image" style="background: url('./img/portfolio-brklyn-txt.png');"></div>
           </a>
           <div class="description">
             <p>A brief attempt at a text-based stream of consciousness narrative, from the perspective of my apartment's balcony.</p>
@@ -176,136 +184,122 @@
           </span>
         </section>
       </article>
-      <article id="work-tab" class="tab-container">
-        <section class="work-summary">
-          <span class="summary-spacer"></span>
-          <p>Here's a timeline of my development and design career over the last 15 years. If you're looking for a formal enumeration of my past work, take a look at <a target="_blank" alt="Resume" href="./TJF_Resume.pdf">my resume</a>.</p>
-        </section>
-        <!-- <section class="work-entry">
-          <div class="work-dates">
-            <span class="work-end">2019</span>
+      <article id="resume-tab" class="tab-container">
+        <embed src="./TJF_Resume.pdf" type="application/pdf" style="width: 100%; height: 100%;" internalinstanceid="6">
+      </article>
+      <article id="history-tab" class="tab-container">
+        <section class="history-entry">
+          <div class="history-dates">
+            <span class="history-start">2017</span>
           </div>
-          <div class="work-timeline">
-            <span class="work-node"></span>
-            <span class="work-line"></span>
+          <div class="history-timeline">
+            <span class="history-node"></span>
+            <span class="history-line"></span>
           </div>
-          <div class="work-description">
-            <p>Building </p>
-          </div>
-        </section> -->
-        <section class="work-entry">
-          <div class="work-dates">
-            <span class="work-start">2017</span>
-          </div>
-          <div class="work-timeline">
-            <span class="work-node"></span>
-            <span class="work-line"></span>
-          </div>
-          <div class="work-description">
-            <p>Promoted to UI Lead at Doctor Evidence, responsible for the design and implementation of all front-end components and features across multiple independent applications, also contributing to project management and hiring/onboarding of new front-end developers.
-            </p>
-            <div class="work-img">
-              <a href="./img/work-dre7.png" title="Real-time searchable, filterable, sortable tables of data" target="_blank"><img alt="Real-time searchable, filterable, sortable tables of data" src="./img/work-dre7.png" /></a>
-              <a href="./img/work-dre6.png" title="Box plots generated with d3.js, used to identify outliers in the data" target="_blank"><img alt="Box plots generated with d3.js, used to identify outliers in the data." src="./img/work-dre6.png" /></a>
+          <div class="history-description">
+            <p>Promoted to UI Lead at Doctor Evidence.</p>
+            <div class="history-img">
+              <a href="./img/history-dre7.png" title="Real-time searchable, filterable, sortable tables of data" target="_blank"><img alt="Real-time searchable, filterable, sortable tables of data" src="./img/history-dre7.png" /></a>
+              <a href="./img/history-dre6.png" title="Box plots generated with d3.js, used to identify outliers in the data" target="_blank"><img alt="Box plots generated with d3.js, used to identify outliers in the data." src="./img/history-dre6.png" /></a>
             </div>
-            <p>Created a development blog and wrote articles describing <a href="https://dev.doctorevidence.com/doc-datas-dynamic-interactive-visualizations-7887aec7b616">my visualization and UX work</a> and on <a href="https://dev.doctorevidence.com/preserving-our-humanity-in-remote-work-9d508adf35ba">quality communication in the remote environment</a>.</p>
+            <p>Created a development blog and wrote articles describing <a href="https://dev.doctorevidence.com/doc-datas-dynamic-interactive-visualizations-7887aec7b616">my visualization and UX work</a> and on <a href="https://dev.doctorevidence.com/preserving-our-humanity-in-remote-history-9d508adf35ba">quality communication in the remote environment</a>.</p>
           </div>
         </section>
-        <section class="work-entry">
-          <div class="work-dates">
-            <span class="work-start">2015</span>
+        <section class="history-entry">
+          <div class="history-dates">
+            <span class="history-start">2015</span>
           </div>
-          <div class="work-timeline">
-            <span class="work-node"></span>
-            <span class="work-line"></span>
+          <div class="history-timeline">
+            <span class="history-node"></span>
+            <span class="history-line"></span>
           </div>
-          <div class="work-description">
-            <p>Hired full-time at Doctor Evidence as a senior front-end developer, where I architected and implemented a new front-end data model for clinical research trials. I continued my work on visualizations, refactored the entire codebase from CoffeeScript to ES6, and built dozens of new tools and features for generating reports, sorting/filtering/searching large quantities of data, and assisted in project management.</p>
-            <div class="work-img">
-              <a href="./img/work-dre4.png" title="Interactive node graphs built in d3.js, used to visualize relationships betweeen populations and select among them" target="_blank"><img alt="Interactive node graphs built in d3.js, used to visualize relationships betweeen populations and select among them" src="./img/work-dre4.png" /></a>
-              <a href="./img/work-dre3.png" title="Interactive histograms with range sliders built in d3.js, used to visualize available values and select ranges within them" target="_blank"><img alt="Interactive histograms with range sliders built in d3.js, used to visualize available values and select ranges within them" src="./img/work-dre3.png" /></a>
-              <span class="work-img-caption"></span>
+          <div class="history-description">
+            <p>Hired full-time at Doctor Evidence as a senior front-end developer.</p>
+            <div class="history-img">
+              <a href="./img/history-dre4.png" title="Interactive node graphs built in d3.js, used to visualize relationships betweeen populations and select among them" target="_blank"><img alt="Interactive node graphs built in d3.js, used to visualize relationships betweeen populations and select among them" src="./img/history-dre4.png" /></a>
+              <a href="./img/history-dre3.png" title="Interactive histograms with range sliders built in d3.js, used to visualize available values and select ranges within them" target="_blank"><img alt="Interactive histograms with range sliders built in d3.js, used to visualize available values and select ranges within them" src="./img/history-dre3.png" /></a>
+              <span class="history-img-caption"></span>
             </div>
-            <p>Rebuilt <a href="http://thelackthereof.com" target="_blank">my blog</a> with a completely new style. More responsive design for better mobile display, better contrast for legibility.</p>
-            <div class="work-img">
-              <a href="./img/work-blog2.png" title="A new, more responsive blog design with better contrast and typography" target="_blank"><img alt="A new, more responsive blog design with better contrast and typography" src="./img/work-blog2.png" /></a>
+            <p>Rebuilt <a href="http://thelackthereof.com" target="_blank">my blog</a> with a completely new style.</p>
+            <div class="history-img">
+              <a href="./img/history-blog2.png" title="A new, more responsive blog design with better contrast and typography" target="_blank"><img alt="A new, more responsive blog design with better contrast and typography" src="./img/history-blog2.png" /></a>
             </div>
           </div>
         </section>
-        <section class="work-entry">
-          <div class="work-dates">
-            <span class="work-start">2014</span>
+        <section class="history-entry">
+          <div class="history-dates">
+            <span class="history-start">2014</span>
           </div>
-          <div class="work-timeline">
-            <span class="work-node"></span>
-            <span class="work-line"></span>
+          <div class="history-timeline">
+            <span class="history-node"></span>
+            <span class="history-line"></span>
           </div>
-          <div class="work-description">
-            <p>Hired as a fully remote independent contractor for Doctor Evidence, building out the front-end for a brand new single-page application targeted towards medical researchers, pharmacologists, and biostatisticians. Established the platform-wide style and aesthetic guide, wrote all CSS, created all reusable front-components, and constructed several interactive visualizations in d3.</p>
-            <div class="work-img">
-              <a href="./img/work-dre2.png" title="Reactive, searchable, filterable bubble chart for exploring data within the system" target="_blank"><img alt="Reactive, searchable, filterable bubble chart for exploring data within the system" src="./img/work-dre2.png" /></a>
-              <a href="./img/work-dre1.png" title="Reactive, searchable, filterable parallel coordinates chart for visualizing distributions of data and seeing relationships across variables" target="_blank"><img alt="Reactive, searchable, filterable parallel coordinates chart for visualizing distributions of data and seeing relationships across variables" src="./img/work-dre1.png" /></a>
+          <div class="history-description">
+            <p>Hired as a fully remote independent contractor for Doctor Evidence.</p>
+            <div class="history-img">
+              <a href="./img/history-dre2.png" title="Reactive, searchable, filterable bubble chart for exploring data within the system" target="_blank"><img alt="Reactive, searchable, filterable bubble chart for exploring data within the system" src="./img/history-dre2.png" /></a>
+              <a href="./img/history-dre1.png" title="Reactive, searchable, filterable parallel coordinates chart for visualizing distributions of data and seeing relationships across variables" target="_blank"><img alt="Reactive, searchable, filterable parallel coordinates chart for visualizing distributions of data and seeing relationships across variables" src="./img/history-dre1.png" /></a>
             </div>
             <p>Began exploring creative coding projects leveraging <a href="http://tjfroll.github.io/sketch/pixelwalker/">canvas</a>, <a href="https://tjfroll.github.io/svg-performance/">SVG</a>, and <a href="http://tjfroll.github.io/sketch/glamboozle/">Processing</a>.</p>
           </div>
         </section>
-        <section class="work-entry">
-          <div class="work-dates">
-            <span class="work-start">2013</span>
+        <section class="history-entry">
+          <div class="history-dates">
+            <span class="history-start">2013</span>
           </div>
-          <div class="work-timeline">
-            <span class="work-node"></span>
-            <span class="work-line"></span>
+          <div class="history-timeline">
+            <span class="history-node"></span>
+            <span class="history-line"></span>
           </div>
-          <div class="work-description">
-            <p>Hired as a developer-designer for tech consulting firm in Kansas City, MO. Created a custom eCommerce site for Medicare supplies, where I designed and implemented the site structure, shopping cart, and purchasing interface. I also wrote all copy, marketing/promotional materials, and operated AdWords campaigns.</p>
+          <div class="history-description">
+            <p>Hired as a developer-designer for tech consulting firm in Kansas City, MO.</p>
             <p>Started creating <a href="http://thunderfunking.tumblr.com">digital artwork</a> with a focus on abstract, geometric, and generative styles. Made my first <a href="http://tjfroll.com/art" target="_blank">creative/artistic portfolio site</a>.</p>
-            <div class="work-img">
-              <a href="./img/work-tumblr.png" title="A minimalist tumblr design for hosting images of my artwork" target="_blank"><img alt="A minimalist tumblr design for hosting images of my artwork" src="./img/work-tumblr.png" /></a>
-              <a href="./img/work-art.png" title="A gallery display of my artwork, with a more abstract presentation style" target="_blank"><img alt="A gallery display of my artwork, with a more abstract presentation style" src="./img/work-art.png" /></a>
+            <div class="history-img">
+              <a href="./img/history-tumblr.png" title="A minimalist tumblr design for hosting images of my artwork" target="_blank"><img alt="A minimalist tumblr design for hosting images of my artwork" src="./img/history-tumblr.png" /></a>
+              <a href="./img/history-art.png" title="A gallery display of my artwork, with a more abstract presentation style" target="_blank"><img alt="A gallery display of my artwork, with a more abstract presentation style" src="./img/history-art.png" /></a>
             </div>
             <p>Created <a href="http://tjfroll.com" target="_blank">my first development portfolio site</a>.</p>
           </div>
         </section>
-        <section class="work-entry">
-          <div class="work-dates">
-            <span class="work-start">2012</span>
+        <section class="history-entry">
+          <div class="history-dates">
+            <span class="history-start">2012</span>
           </div>
-          <div class="work-timeline">
-            <span class="work-node"></span>
-            <span class="work-line"></span>
+          <div class="history-timeline">
+            <span class="history-node"></span>
+            <span class="history-line"></span>
           </div>
-          <div class="work-description">
-            <p>Hired as a data assistant for the publishing arm of the <a href="http://esapubs.org/archive">Ecological Society of America</a> in Ithaca, NY. I taught myself PHP and SQL to automate most of the operations in my work, and redesigned the ESA website and tutorials in response to frequent problems encountered during communication with authors.</p>
-            <div class="work-img">
-              <a href="./img/work-esa.png" title="A searchable database I implemented in PHP, with a MySQL database. Also rewrote and styled the public-facing portions of the ESA archives website" target="_blank"><img alt="A searchable database I implemented in PHP, with a MySQL database. Also rewrote and styled the public-facing portions of the ESA archives website" src="./img/work-esa.png" /></a>
+          <div class="history-description">
+            <p>Hired as a data assistant for the publishing arm of the <a href="http://esapubs.org/archive">Ecological Society of America</a> in Ithaca, NY.</p>
+            <div class="history-img">
+              <a href="./img/history-esa.png" title="A searchable database I implemented in PHP, with a MySQL database. Also rewrote and styled the public-facing portions of the ESA archives website" target="_blank"><img alt="A searchable database I implemented in PHP, with a MySQL database. Also rewrote and styled the public-facing portions of the ESA archives website" src="./img/history-esa.png" /></a>
             </div>
             <p>Created a variety of hobby websites, including a small informational site for a friend's sewing business.</p>
-            <div class="work-img">
-              <a href="./img/work-katia.png" title="A small informational site I made for a friend's sewing business" target="_blank"><img alt="A small informational site I made for a friend's sewing business" src="./img/work-katia.png" /></a>
+            <div class="history-img">
+              <a href="./img/history-katia.png" title="A small informational site I made for a friend's sewing business" target="_blank"><img alt="A small informational site I made for a friend's sewing business" src="./img/history-katia.png" /></a>
             </div>
-            <p>Started <a href="http://thelackthereof.com">a personal blog</a>, beginning the journey of learning HTML and CSS. </p>
-            <div class="work-img">
-              <a href="./img/work-blog1.png" title="An early iteration of my Wordpress blog; the background scene was done entirely in CSS" target="_blank"><img alt="An early iteration of my blog; the background scene was done entirely in CSS" src="./img/work-blog1.png" /></a>
+            <p>Transitioned <a href="http://thelackthereof.com">my personal blog</a> to Wordpress from Blogger and redesigned it with a background scene done entirely in CSS. This was a wildly impractical design, but turned out to be a great exercise in learning the limits of complex CSS display.</p>
+            <div class="history-img">
+              <a href="./img/history-blog1.png" title="An early iteration of my Wordpress blog; the background scene was done entirely in CSS" target="_blank"><img alt="An early iteration of my blog; the background scene was done entirely in CSS" src="./img/history-blog1.png" /></a>
             </div>
           </div>
         </section>
-        <section class="work-entry">
-          <div class="work-dates">
-            <span class="work-start">2003</span>
+        <section class="history-entry">
+          <div class="history-dates">
+            <span class="history-start">2011</span>
           </div>
-          <div class="work-timeline">
-            <span class="work-node"></span>
+          <div class="history-timeline">
+            <span class="history-node"></span>
           </div>
-          <div class="work-description">
+          <div class="history-description">
           </div>
         </section>
       </article>
       <article id="about-tab" class="tab-container">
         <section>
           <img id="bio-img" src="./img/bio.jpg">
-          <p>I'm Tim, a web developer, technologist, and all-around internet enthusiast based in Brooklyn, NY. I've been building websites of all shapes and sizes for fifteen years, with a focus on <a href="https://dev.doctorevidence.com/doc-datas-dynamic-interactive-visualizations-7887aec7b616" target="_blank">rendering complex information and designing intuitive and sophisticated interfaces</a>.</p>
-          <p>Over my career, I have witnessed the fatal disconnect between the design of our technology and the needs of our users. I craft tools that bridge this divide: intuitive software that enhances our creative and intellectual abilities. My dream is to close the gap between thought and creation.</p>
+          <p>I'm Tim, a web developer, technologist, and all-around internet enthusiast based in Brooklyn, NY. I've been building websites of all shapes and sizes for fifteen years, with a focus on rendering complex information and designing intuitive and sophisticated interfaces.</p>
+          <p>Over my career, I've witnessed the fatal disconnect between the design of our technology and the needs of our users. I craft tools that bridge this divide: intuitive software that enhances our creative and intellectual abilities. My dream is to close the gap between thought and creation.</p>
           <p>As a developer and designer. I've worked directly with users, clients, and stakeholders to draft specifications and mockups, implemented these requests and iterated based on feedback, tracked usage and behavior to identify failures and successes, and reported these results back to stakeholders for review. I believe in a holistic approach to development - I will take on any task necessary that will achieve the best result for my users.</p>
           <p>If you share my enthusiasm for building powerful, intuitive software, I'd love to talk to you.</p>
           <blockquote>
