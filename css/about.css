@@ -38,10 +38,21 @@
   margin-bottom: 1rem;
 }
 
-#about-tab blockquote {
+#about-tab blockquote, #about-tab blockquote p {
   text-align: center;
   color: #CCC;
   font-size: 1.4rem;
+}
+
+#about-tab blockquote a { 
+  transition-duration: .15s;
+  transition-property: color, text-shadow;
+  cursor: pointer;
+}
+
+#about-tab blockquote a:hover {
+  color: #FFF;
+  text-shadow: 0 0 1rem #ca80d3;
 }
 
 #about-tab a {

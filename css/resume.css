@@ -1,0 +1,22 @@
+#resume-tab {
+  height: 85vh;
+  margin: 0;
+  flex-direction: column;
+}
+#resume-pdf {
+  display: none;
+}
+#resume-fallback {
+  padding: 1rem;
+  color: #CCC;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.no-touchevents #resume-fallback {
+  display: none;
+}
+.no-touchevents #resume-pdf {
+  height: 100%;
+  display: flex;
+}

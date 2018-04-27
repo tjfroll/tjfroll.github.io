@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/portfolio.css" />
     <link rel="stylesheet" href="./css/history.css" />
+    <link rel="stylesheet" href="./css/resume.css" />
     <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
@@ -49,26 +50,9 @@
       <nav id="tabs-nav">
         <a id="portfolio-nav" title="portfolio">PORTFOLIO</a>
         <a id="resume-nav" title="resume">RESUME</a>
-        <a style="display: none;" id="history-nav" title="history">HISTORY</a>
+        <a id="history-nav" title="history">HISTORY</a>
         <a id="about-nav" title="about" class="">ABOUT</a>
       </nav>
-      <nav id="social-nav">
-        <a title="Github" href="https://github.com/tjfroll" target="_blank">
-          <i class="fab fa-fw fa-2x fa-github"></i>
-        </a>
-        <a title="LinkedIn" href="https://linkedin.com/in/tjfroll" target="_blank">
-          <i class="fab fa-fw fa-2x fa-linkedin"></i>
-        </a>
-        <a title="Twitter" href="https://twitter.com/thunderfunking" target="_blank">
-          <i class="fab fa-fw fa-2x fa-twitter-square"></i>
-        </a>
-        <a title="Instagram" href="https://instagram.com/thunderfunking" target="_blank">
-          <i class="fab fa-fw fa-2x fa-instagram"></i>
-        </a>
-        <a title="Medium" href="https://medium.com/@thunderfunking" target="_blank">
-          <i class="fab fa-fw fa-2x fa-medium"></i>
-        </a>
-      </div>
     </header>
 
     <div id="viewport">
@@ -189,132 +173,201 @@
           <embed src="./TJF_Resume.pdf" type="application/pdf" style="width: 100%; height: 100%;">
         </section>
         <section id="resume-fallback">
-          <p>If you were on a desktop, I could display my resume in the browser for you. But I can't do that since you're on a mobile device. But you can <a href="./TJF_Resume.pdf" target="_blank">download my resume</a> and view it on your device.</p>
+          <p>If you were on a desktop, I could display my resume right heere in the browser for you. But I can't do that since you're on a mobile device. However, you can <a href="./TJF_Resume.pdf" target="_blank">download my resume</a>.</p>
         </section>
       </article>
       <article id="history-tab" class="tab-container">
+        <section id="history-summary">
+          <div class="history-spacer">
+          </div>
+          <p>A chronological look back through my past work, including side projects and creative explorations..</p>
+        </section>
         <section class="history-entry">
-          <div class="history-dates">
-            <span class="history-start">2017</span>
+          <div class="history-spacer">
           </div>
           <div class="history-timeline">
             <span class="history-node"></span>
             <span class="history-line"></span>
           </div>
           <div class="history-description">
-            <p>Promoted to UI Lead at Doctor Evidence.</p>
-            <div class="history-img">
-              <a href="./img/history-dre7.png" title="Real-time searchable, filterable, sortable tables of data" target="_blank"><img alt="Real-time searchable, filterable, sortable tables of data" src="./img/history-dre7.png" /></a>
-              <a href="./img/history-dre6.png" title="Box plots generated with d3.js, used to identify outliers in the data" target="_blank"><img alt="Box plots generated with d3.js, used to identify outliers in the data." src="./img/history-dre6.png" /></a>
-            </div>
+            <div class="history-dates">2018</div>
             <p>Created a development blog and wrote articles describing <a href="https://dev.doctorevidence.com/doc-datas-dynamic-interactive-visualizations-7887aec7b616">my visualization and UX work</a> and on <a href="https://dev.doctorevidence.com/preserving-our-humanity-in-remote-history-9d508adf35ba">quality communication in the remote environment</a>.</p>
           </div>
         </section>
         <section class="history-entry">
-          <div class="history-dates">
-            <span class="history-start">2015</span>
+          <div class="history-spacer">
+          </div>
+          <div class="history-timeline">
+            <span class="history-line"></span>
+          </div>
+          <div class="history-description">
+            <p>Created <a href="https://tjfroll.github.io/Panorama" target="_blank">Panorama</a>, an attempt to identify larger trends in the news by aggregating articles into a interactive histogram.</p>
+            <div class="history-images">
+              <img src="./img/portfolio-panorama.png" width="450" />
+            </div>
+          </div>
+        </section>
+        <section class="history-entry">
+          <div class="history-spacer">
           </div>
           <div class="history-timeline">
             <span class="history-node"></span>
             <span class="history-line"></span>
           </div>
           <div class="history-description">
-            <p>Hired full-time at Doctor Evidence as a senior front-end developer.</p>
-            <div class="history-img">
-              <a href="./img/history-dre4.png" title="Interactive node graphs built in d3.js, used to visualize relationships betweeen populations and select among them" target="_blank"><img alt="Interactive node graphs built in d3.js, used to visualize relationships betweeen populations and select among them" src="./img/history-dre4.png" /></a>
-              <a href="./img/history-dre3.png" title="Interactive histograms with range sliders built in d3.js, used to visualize available values and select ranges within them" target="_blank"><img alt="Interactive histograms with range sliders built in d3.js, used to visualize available values and select ranges within them" src="./img/history-dre3.png" /></a>
-              <span class="history-img-caption"></span>
+            <div class="history-dates">2017</div>
+            <p>Promoted to UI Lead at Doctor Evidence.</p>
+            <div class="history-images">
+              <a href="./img/history-dre7.png" title="Real-time searchable, filterable, sortable tables of data" target="_blank"><img alt="Real-time searchable, filterable, sortable tables of data" src="./img/history-dre7.png" /></a>
             </div>
-            <p>Rebuilt <a href="http://thelackthereof.com" target="_blank">my blog</a> with a completely new style.</p>
-            <div class="history-img">
+          </div>
+        </section>
+        <section class="history-entry">
+          <div class="history-spacer">
+          </div>
+          <div class="history-timeline">
+            <span class="history-line"></span>
+          </div>
+          <div class="history-description">
+            <p>Created <a href="https://tjfroll.github.io/pixelwalker" target="_blank">Pixel Walker</a>, my first exploration of canvas. Progressively distorts images by sending pixels on a random walk, configurable by direction and color channel.</p>
+            <div class="history-images">
+              <img src="./img/portfolio-pixel-walker.jpg" />
+            </div>
+          </div>
+        </section>
+        <section class="history-entry">
+          <div class="history-spacer">
+          </div>
+          <div class="history-timeline">
+            <span class="history-node"></span>
+            <span class="history-line"></span>
+          </div>
+          <div class="history-description">
+            <div class="history-dates">2016</div>
+            <p>Hired at Doctor Evidence as a senior front-end developer, where I designed and built many new interactive visualizations in d3.js and c3.js.</p>
+            <div class="history-images">
+              <a href="./img/history-dre3.png" title="Interactive histograms with range sliders built in d3.js, used to visualize available values and select ranges within them" target="_blank"><img alt="Interactive histograms with range sliders built in d3.js, used to visualize available values and select ranges within them" src="./img/history-dre3.png" width="300" /></a>
+            </div>
+          </div>
+        </section>
+        <section class="history-entry">
+          <div class="history-spacer">
+          </div>
+          <div class="history-timeline">
+            <span class="history-node"></span>
+            <span class="history-line"></span>
+          </div>
+          <div class="history-description">
+            <div class="history-dates">2015</div>
+            <p>Rebuilt <a href="http://thelackthereof.com" target="_blank">my blog</a> with a completely new style. My old design wasn't truly responsive and the white-on-black color scheme was very difficult to read. After launching the new design, I posted <a href="http://thelackthereof.com/2015/12/03/chronistic/" target="_blank">a retrospective on all the designs I'd created</a> since the blog's inception in 2004.</p>
+            <div class="history-images">
               <a href="./img/history-blog2.png" title="A new, more responsive blog design with better contrast and typography" target="_blank"><img alt="A new, more responsive blog design with better contrast and typography" src="./img/history-blog2.png" /></a>
             </div>
           </div>
         </section>
         <section class="history-entry">
-          <div class="history-dates">
-            <span class="history-start">2014</span>
+          <div class="history-spacer">
           </div>
           <div class="history-timeline">
-            <span class="history-node"></span>
             <span class="history-line"></span>
           </div>
           <div class="history-description">
-            <p>Hired as a fully remote independent contractor for Doctor Evidence.</p>
-            <div class="history-img">
-              <a href="./img/history-dre2.png" title="Reactive, searchable, filterable bubble chart for exploring data within the system" target="_blank"><img alt="Reactive, searchable, filterable bubble chart for exploring data within the system" src="./img/history-dre2.png" /></a>
-              <a href="./img/history-dre1.png" title="Reactive, searchable, filterable parallel coordinates chart for visualizing distributions of data and seeing relationships across variables" target="_blank"><img alt="Reactive, searchable, filterable parallel coordinates chart for visualizing distributions of data and seeing relationships across variables" src="./img/history-dre1.png" /></a>
+            <p>Hired as a fully remote independent contractor for Doctor Evidence, where I built my first SVG and d3.js visualizations. I also made <i>a lot</i> of tables. Very large tables.</p>
+            <div class="history-images">
+              <a href="./img/history-dre5.png" title="Reactive, searchable, filterable tables for exploring data within the system" target="_blank"><img alt="Reactive, searchable, filterable tables for exploring data within the system" src="./img/history-dre5.png" width="450" /></a>
             </div>
-            <p>Began exploring creative coding projects leveraging <a href="http://tjfroll.github.io/sketch/pixelwalker/">canvas</a>, <a href="https://tjfroll.github.io/svg-performance/">SVG</a>, and <a href="http://tjfroll.github.io/sketch/glamboozle/">Processing</a>.</p>
           </div>
         </section>
         <section class="history-entry">
-          <div class="history-dates">
-            <span class="history-start">2013</span>
+          <div class="history-spacer">
           </div>
           <div class="history-timeline">
             <span class="history-node"></span>
             <span class="history-line"></span>
           </div>
           <div class="history-description">
-            <p>Hired as a developer-designer for tech consulting firm in Kansas City, MO.</p>
-            <p>Started creating <a href="http://thunderfunking.tumblr.com">digital artwork</a> with a focus on abstract, geometric, and generative styles. Made my first <a href="http://tjfroll.com/art" target="_blank">creative/artistic portfolio site</a>.</p>
-            <div class="history-img">
-              <a href="./img/history-tumblr.png" title="A minimalist tumblr design for hosting images of my artwork" target="_blank"><img alt="A minimalist tumblr design for hosting images of my artwork" src="./img/history-tumblr.png" /></a>
+            <div class="history-dates">2014</div>
+            <p>Made my first <a href="http://tjfroll.com/art" target="_blank">creative/artistic portfolio site</a>.</p>
+            <div class="history-images">
               <a href="./img/history-art.png" title="A gallery display of my artwork, with a more abstract presentation style" target="_blank"><img alt="A gallery display of my artwork, with a more abstract presentation style" src="./img/history-art.png" /></a>
             </div>
-            <p>Created <a href="http://tjfroll.com" target="_blank">my first development portfolio site</a>.</p>
+            <p>Taught myself Photoshop and Illustrator, then started creating <a href="http://thunderfunking.tumblr.com">digital artwork</a> with a focus on abstract, geometric, and generative styles.</p>
+            <p>Hired as a developer-designer for tech consulting firm in Kansas City, MO, where I created and launched a website for ordering custom orthotics.</p>
           </div>
         </section>
         <section class="history-entry">
-          <div class="history-dates">
-            <span class="history-start">2012</span>
+          <div class="history-spacer">
           </div>
           <div class="history-timeline">
             <span class="history-node"></span>
             <span class="history-line"></span>
           </div>
           <div class="history-description">
-            <p>Hired as a data assistant for the publishing arm of the <a href="http://esapubs.org/archive">Ecological Society of America</a> in Ithaca, NY.</p>
-            <div class="history-img">
-              <a href="./img/history-esa.png" title="A searchable database I implemented in PHP, with a MySQL database. Also rewrote and styled the public-facing portions of the ESA archives website" target="_blank"><img alt="A searchable database I implemented in PHP, with a MySQL database. Also rewrote and styled the public-facing portions of the ESA archives website" src="./img/history-esa.png" /></a>
+            <div class="history-dates">2013</div>
+            <p>Created a promotional site for a friend's sewing business. This, too, was done purely in CSS. I was very enamored with the <i>border-radius</i> property.</p>
+            <div class="history-images">
+              <a href="./img/history-katia.png" title="A small informational site I made for a friend's sewing business" target="_blank"><img alt="A small informational site I made for a friend's sewing business" src="./img/history-katia.png" width="450" /></a>
             </div>
-            <p>Created a variety of hobby websites, including a small informational site for a friend's sewing business.</p>
-            <div class="history-img">
-              <a href="./img/history-katia.png" title="A small informational site I made for a friend's sewing business" target="_blank"><img alt="A small informational site I made for a friend's sewing business" src="./img/history-katia.png" /></a>
-            </div>
+            <p>Hired as a data assistant for the publishing arm of the <a href="http://esapubs.org/archive">Ecological Society of America</a> in Ithaca, NY, where I taught myself PHP and SQL to revamp ESA's online archives.</p>
+          </div>
+        </section>
+        <section class="history-entry">
+          <div class="history-spacer">
+          </div>
+          <div class="history-timeline">
+            <span class="history-node"></span>
+            <span class="history-line"></span>
+          </div>
+          <div class="history-description">
+            <div class="history-dates">2012</div>
             <p>Transitioned <a href="http://thelackthereof.com">my personal blog</a> to Wordpress from Blogger and redesigned it with a background scene done entirely in CSS. This was a wildly impractical design, but turned out to be a great exercise in learning the limits of complex CSS display.</p>
-            <div class="history-img">
+            <div class="history-images">
               <a href="./img/history-blog1.png" title="An early iteration of my Wordpress blog; the background scene was done entirely in CSS" target="_blank"><img alt="An early iteration of my blog; the background scene was done entirely in CSS" src="./img/history-blog1.png" /></a>
             </div>
           </div>
         </section>
         <section class="history-entry">
-          <div class="history-dates">
-            <span class="history-start">2011</span>
+          <div class="history-spacer">
           </div>
           <div class="history-timeline">
             <span class="history-node"></span>
           </div>
           <div class="history-description">
+            <div class="history-dates">2011</div>
           </div>
         </section>
       </article>
       <article id="about-tab" class="tab-container">
         <section>
           <img id="bio-img" src="./img/bio.jpg">
-          <p>I'm Tim, a web developer, technologist, and all-around internet enthusiast based in Brooklyn, NY. I've been building websites of all shapes and sizes for fifteen years, with a focus on rendering complex information and designing intuitive and sophisticated interfaces.</p>
+          <p>I'm Tim, a web developer, technologist, and all-around internet enthusiast based in Brooklyn, NY. I've been building websites of all shapes and sizes for over a decade, with a focus on rendering complex information and designing intuitive and sophisticated interfaces.</p>
           <p>Over my career, I've witnessed the fatal disconnect between the design of our technology and the needs of our users. I craft tools that bridge this divide: intuitive software that enhances our creative and intellectual abilities. My dream is to close the gap between thought and creation.</p>
           <p>As a developer and designer. I've worked directly with users, clients, and stakeholders to draft specifications and mockups, implemented these requests and iterated based on feedback, tracked usage and behavior to identify failures and successes, and reported these results back to stakeholders for review. I believe in a holistic approach to development - I will take on any task necessary that will achieve the best result for my users.</p>
           <p>If you share my enthusiasm for building powerful, intuitive software, I'd love to talk to you.</p>
           <blockquote>
-            email: tjfroll<span class="highlight-blue">@</span>gmail.com<br />
-            twitter: <a title="Twitter" href="https://twitter.com/thunderfunking" target="_blank">
-              <span class="highlight-blue">@</span>thunderfunking</a>
+            <a title="Github" href="https://github.com/tjfroll" target="_blank">
+              <i class="fab fa-fw fa-2x fa-github"></i>
+            </a>
+            <a title="LinkedIn" href="https://linkedin.com/in/tjfroll" target="_blank">
+              <i class="fab fa-fw fa-2x fa-linkedin"></i>
+            </a>
+            <a title="Twitter" href="https://twitter.com/thunderfunking" target="_blank">
+              <i class="fab fa-fw fa-2x fa-twitter-square"></i>
+            </a>
+            <a title="Instagram" href="https://instagram.com/thunderfunking" target="_blank">
+              <i class="fab fa-fw fa-2x fa-instagram"></i>
+            </a>
+            <a title="Medium" href="https://medium.com/@thunderfunking" target="_blank">
+              <i class="fab fa-fw fa-2x fa-medium"></i>
+            </a>
           </blockquote>
         </section>
       </article>
     </div>
+
+    <footer>
+      tjfroll<span class="highlight-blue">@</span>gmail.com
+    </footer>
     <script src="./modernizr.js"></script>
     <script src="./index.js"></script>
   </body>
