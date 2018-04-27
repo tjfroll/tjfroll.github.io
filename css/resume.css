@@ -13,10 +13,10 @@
   justify-content: center;
   font-size: 1.2rem;
 }
-.no-touchevents #resume-fallback {
+.is-not-mobile #resume-fallback {
   display: none;
 }
-.no-touchevents #resume-pdf {
+.is-not-mobile #resume-pdf {
   height: 100%;
   display: flex;
 }
