@@ -16,6 +16,9 @@
     max-width: 18rem;
     margin: 0 20vw 1rem 20vw;
   }
+  .history-spacer {
+    flex-grow: .05;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 799px) {
@@ -23,15 +26,22 @@
     font-size: 90%;
   }
   header h1 {
+    padding-left: 1.5rem;
     font-size: 2.8rem;
   }
-}
-@media (min-width: 800px) {
-  html {
-    font-size: 100%;
+  .history-spacer {
+    flex-grow: .1;
   }
+  #tabs-nav > a {
+    padding: .3rem .7rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1024px) {
   header h1 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
+  }
+  .history-spacer {
+    flex-grow: .15;
   }
 }
 
