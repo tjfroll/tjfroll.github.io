@@ -83,6 +83,18 @@ body {
   margin: 0;
 }
 
+#resume-tab .fallback {
+  display: none;
+}
+
+#resume-tab.no-pdf embed {
+  display: none;
+}
+
+#resume-tab.no-pdf .fallback {
+  display: block;
+}
+
 #portfolio-tab {
   margin-top: 0;
 }
