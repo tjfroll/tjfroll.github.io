@@ -1,6 +1,6 @@
 #portfolio-tab {
   flex-direction: column;
-  margin-top: 0;
+  margin: 0;
 }
 
 .portfolio {
@@ -13,7 +13,12 @@
   transition-duration: .15s;
   transition-property: background-color, color, border-color;
   z-index: 10;
-  border-top: .2rem solid #222;
+  border-top: .1rem solid #222;
+}
+
+.portfolio:first-child {
+  margin-top: 0;
+  border-top: 0;
 }
 
 .portfolio a {

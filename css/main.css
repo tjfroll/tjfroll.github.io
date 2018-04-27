@@ -70,8 +70,8 @@ body {
 }
 
 #viewport {
-  border-top: .5rem double #222;
-  border-bottom: .5rem double #222;
+  border-top: 1rem double #222;
+  border-bottom: 1rem double #222;
   background-color: #444;
 }
 

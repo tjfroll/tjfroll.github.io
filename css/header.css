@@ -21,7 +21,7 @@ h1 {
   display: flex;
   padding-left: .5rem;
   padding-top: 1rem;
-  margin-bottom: -.5rem;
+  margin-bottom: -1rem;
   z-index: 100;
   font-family: 'Dosis', sans-serif;
   font-size: 1.2rem;
@@ -34,7 +34,7 @@ h1 {
   padding: .3rem 1rem;
   transition-duration: .15s;
   transition-property: color, border-color;
-  border-bottom: .5rem double transparent;
+  border-bottom: 1rem double transparent;
 }
 
 #tabs-nav a:hover {
@@ -45,7 +45,7 @@ h1 {
 
 #tabs-nav a.active {
   color: #FFF;
-  border-bottom: .5rem solid #222;
+  border-bottom: 1rem solid #222;
   text-shadow: 0 0 1rem #000;
 }
 #tabs-nav a.active:hover {
