@@ -10,8 +10,16 @@
   padding: 1rem;
   color: #CCC;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   font-size: 1.2rem;
+}
+#resume-images {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .is-not-mobile #resume-fallback {
   display: none;
