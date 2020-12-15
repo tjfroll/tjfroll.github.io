@@ -2,6 +2,7 @@
   height: 85vh;
   margin: 0;
   flex-direction: column;
+  overflow: auto;
 }
 #resume-pdf {
   display: none;
