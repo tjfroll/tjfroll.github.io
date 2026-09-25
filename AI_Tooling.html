@@ -160,6 +160,17 @@ body[data-section=roundtable] .progress b{background:linear-gradient(90deg,var(-
 .mark{stroke:rgba(255,193,94,.55);stroke-dasharray:4 5}
 .markdot{fill:#1d1a12;stroke:var(--amber);stroke-width:1.5}
 .marknum{fill:var(--amber);font:700 13px var(--mono)}
+.mix{display:grid;grid-template-columns:1fr 320px;gap:24px;flex:1;min-height:0}
+.mix-side{display:flex;flex-direction:column;gap:14px}
+.mcard{flex:1;border-radius:18px;background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--c);padding:14px 20px;display:flex;flex-direction:column;justify-content:center}
+.mcard .k{font:600 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--c)}
+.mcard .big{font-size:30px;font-weight:800;margin:4px 0 2px;white-space:nowrap}
+.mcard .src{font-size:14px;color:var(--muted)}
+.segpct{fill:#fff;font:700 12px var(--mono);opacity:0;transition:opacity .5s;transition-delay:calc(var(--d,0ms) + 1100ms)}
+.slide.active .segpct{opacity:.85}
+.sweep{transform-box:fill-box;transform-origin:left;transform:scaleX(0);transition:transform 1.4s cubic-bezier(.4,.1,.2,1) .2s}
+.slide.active .sweep{transform:scaleX(1)}
+.mixdocs{fill:var(--amber)}
 .notes{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:18px;font-size:15px;color:#aeb6c8}
 .notes b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;border:1.5px solid var(--amber);color:var(--amber);font:700 12px var(--mono);margin-right:8px}
 
@@ -361,6 +372,21 @@ input[type=text]:focus,textarea:focus{border-color:var(--amber)}
   <div class="notes r" style="--i:4"><span><b>1</b>3-month holiday deploy freeze</span><span><b>2</b>Post-freeze catch-up · Cursor enabled</span><span><b>3</b>Contractors · Sonnet 4.5 · Cursor 2.0 · Bugbot</span></div>
 </section>
 
+<!-- 8b. Contribution mix -->
+<section class="slide" data-section="lookback">
+  <div class="head"><div><div class="eyebrow r">The view from web · share of lines of code by type</div><h2 class="r" style="--i:1;white-space:nowrap">More <span class="grad">docs, comments, and tests</span></h2></div></div>
+  <div class="mix">
+    <div class="panel r" style="--i:3"><h4><span></span><span class="legend" id="mix-legend"></span></h4><svg id="c-mix"></svg></div>
+    <div class="mix-side">
+      <div class="mcard r" style="--i:4;--c:var(--amber)"><div class="k">Docs &amp; comments</div><div class="big">12.9×</div><div class="src">7.7k → 99k lines</div></div>
+      <div class="mcard r" style="--i:5;--c:var(--teal)"><div class="k">Tests</div><div class="big">4.1×</div><div class="src">96k → 398k lines</div></div>
+      <div class="mcard r" style="--i:6;--c:var(--violet)"><div class="k">JS/TS</div><div class="big">3.0×</div><div class="src">171k → 504k lines</div></div>
+      <div class="mcard r" style="--i:7;--c:#6b7490"><div class="k">Styles &amp; other</div><div class="big">4.5×</div><div class="src">32k → 144k lines</div></div>
+    </div>
+  </div>
+  <div class="foot r" style="--i:8">* 2026 Q3 is quarter-to-date.</div>
+</section>
+
 <!-- 8. Volume table -->
 <section class="slide" data-section="lookback">
   <div class="head"><div><div class="eyebrow r">The view from web</div><h2 class="r" style="--i:1">By the numbers</h2></div></div>
@@ -511,6 +537,7 @@ input[type=text]:focus,textarea:focus{border-color:var(--amber)}
   <div class="eyebrow r" style="justify-content:center">AI DevX &amp; Tooling with Tim</div>
   <h1 class="r" style="--i:1"><span class="grad-warm">Thank you</span></h1>
   <p class="lede r" style="--i:2;margin:30px auto 0">Questions, ideas, and hot takes are always welcome.</p>
+  <div class="r" style="--i:3;margin-top:48px;font:500 15px var(--mono);letter-spacing:.08em;color:var(--muted)">✦ This deck was generated with Opus 5.5</div>
 </section>
 
 </main>
@@ -593,6 +620,44 @@ chart(document.getElementById('c-perday'),{w:680,h:470,labels:Q,leftMax:500,left
 chart(document.getElementById('c-volume'),{w:1380,h:470,labels:QL,leftMax:1600000,leftFmt:k,rightMax:1400000,rightFmt:k,marks:[[4,1],[5,2],[7,3]],
   sub:V.tg.map(g=>g==null?{t:'—'}:{t:(g>0?'+':'')+g+'%',c:g>=0?'up':'down'}),subTitle:'QoQ',
   series:[{type:'bar',data:V.total,color:'#2de2c4',fmt:k,hl:i=>i>=8?'#ffc15e':null},{type:'line',data:V.loc,color:'#9d8cff',axis:'right'}]});
+
+/* ================= contribution mix (stacked) ================= */
+(()=>{
+  const MIX=[
+    {n:'JS/TS',c:'#9d8cff',d:[170566,185307,231059,226020,228431,216195,235357,261670,321300,419708,503550]},
+    {n:'Tests',c:'#2de2c4',d:[96207,105506,141483,131902,138456,144458,161101,182135,218508,288736,398488]},
+    {n:'Styles & other',c:'#6b7490',d:[31842,41047,50948,53362,55013,56013,59325,68859,99999,123660,144482]},
+    {n:'Docs & comments',c:'#ffc15e',d:[7660,9162,11522,12305,12858,14353,24676,33037,42975,61774,98704]},
+  ];
+  const tot=Q.map((_,i)=>MIX.reduce((s,m)=>s+m.d[i],0));
+  document.getElementById('mix-legend').innerHTML=[...MIX].reverse().map(m=>`<span><i style="background:${m.c}"></i>${m.n}</span>`).join('');
+  const svg=document.getElementById('c-mix'),W=1180,H=560,m={t:44,r:16,b:78,l:66};
+  svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+  const iw=W-m.l-m.r,ih=H-m.t-m.b,n=Q.length,band=iw/n,cx=i=>band*i+band/2,Y=p=>ih-p/100*ih;
+  const g=el('g',{transform:`translate(${m.l},${m.t})`},svg);
+  for(let i=0;i<=4;i++){const yy=Y(i*25);el('line',{x1:0,x2:iw,y1:yy,y2:yy,class:'gridline'},g);txt(g,-14,yy+5,i*25+'%','tick','end')}
+  const defs=svg.querySelector('defs')||el('defs',{},svg),clip='mixclip';
+  el('rect',{x:0,y:-40,width:iw,height:ih+40,class:'sweep'},el('clipPath',{id:clip},defs));
+  const areas=el('g',{'clip-path':`url(#${clip})`},g);
+  const share=MIX.map(s=>s.d.map((v,i)=>v/tot[i]*100));
+  let base=Q.map(()=>0);
+  MIX.forEach((s,si)=>{
+    const top=base.map((b,i)=>b+share[si][i]);
+    const upper=top.map((v,i)=>`${cx(i)},${Y(v)}`),lower=base.map((v,i)=>`${cx(i)},${Y(v)}`).reverse();
+    el('path',{d:`M${upper.join('L')}L${lower.join('L')}Z`,fill:s.c,'fill-opacity':.42},areas);
+    el('path',{d:'M'+upper.join('L'),fill:'none',stroke:s.c,'stroke-width':2.5},areas);
+    Q.forEach((_,i)=>{const p=share[si][i],d=`--d:${i*90}ms`;
+      if(si===MIX.length-1)txt(g,cx(i),Y(top[i])-14,p.toFixed(1)+'%','val mixdocs').setAttribute('style',d);
+      else if(Y(base[i])-Y(top[i])>=22)txt(g,cx(i),(Y(base[i])+Y(top[i]))/2+4,Math.round(p)+'%','segpct').setAttribute('style',d);
+    });
+    base=top;
+  });
+  Q.forEach((q,i)=>{
+    txt(g,cx(i),ih+28,'20'+q+(i===n-1?'*':''),'tick'+(i===n-1?' now':''));
+    txt(g,cx(i),ih+58,k(tot[i]),'sub');
+  });
+  txt(g,-14,ih+58,'LOC','sub','end');
+})();
 
 /* ================= tables ================= */
 function table(host,cols,rows,tags){
